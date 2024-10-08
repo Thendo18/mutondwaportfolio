@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Portfolio - M Maphidzhe</title>
+    <link rel="stylesheet" href="editablePortfolio.css">
+</head>
+
+<body>
+    <div class="form-container">
+        <h1>Edit Portfolio - M Maphidzhe</h1>
+
+        <form id="portfolio-form">
+            <!-- Personal Info Section -->
+            <section id="personal-info">
+                <h2>Personal Info</h2>
+                <textarea rows="4" placeholder="Describe yourself..." required></textarea>
+                <h3>Interests</h3>
+                <div class="interest">
+                    <input type="text" placeholder="Interest 1" required />
+                    <input type="text" placeholder="Interest 2" required />
+                    <input type="text" placeholder="Interest 3" />
+                    <input type="text" placeholder="Interest 4" />
+                </div>
+                <button type="button" class="add-button">Add More Interests</button>
+            </section>
+
+            <!-- Skills Section -->
+            <section id="skills">
+                <h2>Skills</h2>
+                <h3>Expertise</h3>
+                <ul id="expertise-list">
+                    <li><input type="text" placeholder="Skill 1" required /></li>
+                    <li><input type="text" placeholder="Skill 2" required /></li>
+                    <li><input type="text" placeholder="Skill 3" />
+                    </li>
+                    <li><input type="text" placeholder="Skill 4" /></li>
+                </ul>
+                <button type="button" class="add-button" data-target="#expertise-list">Add More Skills</button>
+
+                <h3>Soft Skills</h3>
+                <ul id="soft-skills-list">
+                    <li><input type="text" placeholder="Soft Skill 1" required /></li>
+                    <li><input type="text" placeholder="Soft Skill 2" required /></li>
+                    <li><input type="text" placeholder="Soft Skill 3" />
+                    </li>
+                    <li><input type="text" placeholder="Soft Skill 4" /></li>
+                </ul>
+                <button type="button" class="add-button" data-target="#soft-skills-list">Add More Soft Skills</button>
+            </section>
+
+            <!-- Education Section -->
+            <section id="education">
+                <h2>Education</h2>
+                <div class="edu-item">
+                    <input type="text" placeholder="University/School Name" required />
+                    <input type="text" placeholder="Degree/Qualification" required />
+                    <input type="text" placeholder="Years Attended" required />
+                    <textarea rows="3" placeholder="Description..." required></textarea>
+                </div>
+                <button type="button" class="add-button">Add More Education</button>
+            </section>
+
+            <!-- Experience Section -->
+            <section id="experience">
+                <h2>Experience</h2>
+                <div class="exp-item">
+                    <input type="text" placeholder="Job Title" required />
+                    <input type="text" placeholder="Company Name" required />
+                    <input type="text" placeholder="Years Worked" required />
+                    <textarea rows="3" placeholder="Description of duties..." required></textarea>
+                </div>
+                <button type="button" class="add-button">Add More Experience</button>
+            </section>
+
+            <!-- Project Section -->
+            <section id="project">
+                <h2>Projects</h2>
+                <div class="project-item">
+                    <input type="text" placeholder="Project Title" required />
+                    <input type="text" placeholder="Year" required />
+                    <textarea rows="3" placeholder="Project Description..." required></textarea>
+                </div>
+                <button type="button" class="add-button">Add More Projects</button>
+            </section>
+
+            <!-- Contact Section -->
+            <section id="contact">
+                <h2>Contact Me</h2>
+                <input type="text" placeholder="Phone" required />
+                <input type="email" placeholder="Email" required />
+            </section>
+
+            <button type="submit">Save Changes</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
