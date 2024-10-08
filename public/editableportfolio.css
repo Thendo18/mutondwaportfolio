@@ -9,7 +9,7 @@
 
 body {
     background-color: #121212;
-    color: white; /* Changed text color to white for better contrast */
+    color: white; 
     margin: 0;
     padding: 20px;
 }
@@ -17,48 +17,51 @@ body {
 .form-container {
     min-width: 80%;
     margin: auto;
-    background-color: #1e1e1e; /* Updated for a more consistent look */
-    padding: 2rem; /* Increased padding for a spacious feel */
+    background-color: #1e1e1e; 
+    padding: 2rem; 
     border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5); /* Enhanced shadow for depth */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5); 
 }
 
 h1, h2, h3 {
-    color: var(--primary-color); /* Updated heading color to use the primary color */
+    color: var(--primary-color); 
+    padding-top: 2rem;
 }
 
 section {
-    margin-bottom: 20px;
+    padding: 2rem 2rem;
+    margin-bottom: 1rem;
 }
 
 textarea {
-    width: 100%; /* Changed to width: 100% for a more responsive layout */
-    min-height: 150px; /* Set a minimum height for the textarea */
-    padding: 1rem; /* Increased padding for better usability */
+    width: 100%; 
+    min-height: 150px; 
+    padding: 1rem; 
     border-radius: 5px;
-    border: 1px solid #3a3a3a; /* Updated border color */
-    background-color: #1e1e1e; /* Changed background for consistency */
-    color: white; /* Changed text color to white for better visibility */
+    border: 1px solid #3a3a3a; 
+    background-color: #1e1e1e; 
+    color: white; 
 }
 
 input[type="text"],
 input[type="email"] {
-    width: 100%; /* Changed to width: 100% for a more responsive layout */
-    padding: 1rem; /* Increased padding for better usability */
+    width: 100%; 
+    padding: 1rem; 
     margin-bottom: 10px;
     border-radius: 5px;
-    border: 1px solid #3a3a3a; /* Updated border color */
-    background-color: #1e1e1e; /* Changed background for consistency */
-    color: white; /* Changed text color to white */
+    border: 1px solid #3a3a3a; 
+    background-color: #1e1e1e;
+    color: white; 
 }
 
 button {
-    padding: 1rem 2rem; /* Increased button padding for better touch targets */
-    background-color: #e64e0d; /* Set background color using primary color variable */
+    padding: 1rem 2rem; 
+    background-color: #e64e0d; 
     color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    margin-top: 10px;
   
 }
 
@@ -72,6 +75,6 @@ button {
 
 @media (max-width: 600px) {
     .form-container {
-        padding: 1rem; /* Reduced padding for smaller screens */
+        padding: 1rem; 
     }
 }
