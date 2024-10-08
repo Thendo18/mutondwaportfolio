@@ -1,21 +1,30 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;700&display=swap");
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
 body {
-    font-family: poppins, sans-serif;
-    background: linear-gradient(-45deg, #3877ff, #262525);
+    background-color: #121212;
+    color: white; /* Changed text color to white for better contrast */
     margin: 0;
     padding: 20px;
 }
 
 .form-container {
-    max-width: 800px;
+    min-width: 80%;
     margin: auto;
-    background: white;
-    padding: 20px;
+    background-color: #1e1e1e; /* Updated for a more consistent look */
+    padding: 2rem; /* Increased padding for a spacious feel */
     border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5); /* Enhanced shadow for depth */
 }
 
 h1, h2, h3 {
-    color: #333;
+    color: var(--primary-color); /* Updated heading color to use the primary color */
 }
 
 section {
@@ -23,37 +32,46 @@ section {
 }
 
 textarea {
-    min-width: 90%;
-    padding: 10px;
-    border-radius: 4px;
-    border: 1px solid #ccc;
-    margin-bottom: 10px;
+    width: 100%; /* Changed to width: 100% for a more responsive layout */
+    min-height: 150px; /* Set a minimum height for the textarea */
+    padding: 1rem; /* Increased padding for better usability */
+    border-radius: 5px;
+    border: 1px solid #3a3a3a; /* Updated border color */
+    background-color: #1e1e1e; /* Changed background for consistency */
+    color: white; /* Changed text color to white for better visibility */
 }
 
 input[type="text"],
 input[type="email"] {
-    min-width: 90%;
-    padding: 10px;
+    width: 100%; /* Changed to width: 100% for a more responsive layout */
+    padding: 1rem; /* Increased padding for better usability */
     margin-bottom: 10px;
-    border-radius: 4px;
-    border: 1px solid #ccc;
+    border-radius: 5px;
+    border: 1px solid #3a3a3a; /* Updated border color */
+    background-color: #1e1e1e; /* Changed background for consistency */
+    color: white; /* Changed text color to white */
 }
 
 button {
-    padding: 10px 15px;
-    background-color: #007BFF;
+    padding: 1rem 2rem; /* Increased button padding for better touch targets */
+    background-color: #e64e0d; /* Set background color using primary color variable */
     color: white;
     border: none;
-    border-radius: 4px;
+    border-radius: 5px;
     cursor: pointer;
+  
 }
 
-button:hover {
-    background-color: #0056b3;
+#expertise-list, #soft-skills-list {
+    list-style-type: none; 
+}
+
+#expertise-list li, #soft-skills-list li {
+    list-style-type: none; 
 }
 
 @media (max-width: 600px) {
     .form-container {
-        padding: 10px;
+        padding: 1rem; /* Reduced padding for smaller screens */
     }
 }
