@@ -31,7 +31,7 @@ connection.connect(err => {
 
 // Serve the HTML pages
 app.get('/', (req, res) => {
-  res.sendFile(path.join(__dirname, 'public', 'Portfolio.html'));
+  res.sendFile(path.join(__dirname, 'public', 'index.html'));
 });
 
 

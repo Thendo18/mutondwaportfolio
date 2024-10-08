@@ -29,7 +29,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 
         if (updateResponse.ok) {
             alert('Portfolio updated successfully!');
-            window.location.href = 'portfolio.html'; // Redirect back to the portfolio page
+            window.location.href = 'index.html'; // Redirect back to the portfolio page
         } else {
             alert('Error updating portfolio.');
         }
