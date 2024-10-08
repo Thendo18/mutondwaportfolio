@@ -599,9 +599,14 @@ ul li a:hover {
     margin-left: 20px;
   }
 
+  nav {
+    position: relative; 
+    z-index: 2; 
+  }
+
   ul {
     position: fixed;
-    top: 53px;
+    top: 65px;
     left: -100%;
     background-color: rgb(61, 61, 61);
     width: 50%;

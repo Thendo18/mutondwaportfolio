@@ -286,18 +286,32 @@
         <script>
         feather.replace();
     </script>
-       <script>
-       
-        function closeNavbar() {
-            document.getElementById("check").checked = false; 
-        }
+  <script>
+    function closeNavbar() {
+        document.getElementById("check").checked = false; 
+    }
 
-        // Attach the close function to all menu links
-        const sidebarLinks = document.querySelectorAll('nav ul li a');
-        sidebarLinks.forEach(link => {
-            link.addEventListener('click', closeNavbar);
-        });
-    </script>
+    // Attach the close function to all menu links
+    const sidebarLinks = document.querySelectorAll('nav ul li a');
+    sidebarLinks.forEach(link => {
+        link.addEventListener('click', closeNavbar);
+    });
+
+    // Close sidebar when clicking outside
+    document.addEventListener('click', function(event) {
+        const sidebar = document.getElementById('sidebar'); // Replace with your sidebar's ID
+        const checkBox = document.getElementById("check");
+
+        // Check if the click target is not the sidebar or the toggle button
+        if (!sidebar.contains(event.target) && !checkBox.contains(event.target)) {
+            closeNavbar();
+        }
+    });
+
+    // Close sidebar on scroll
+    window.addEventListener('scroll', closeNavbar);
+</script>
+
     <script>
         feather.replace();
     </script>
