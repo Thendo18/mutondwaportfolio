@@ -610,11 +610,13 @@ ul li a:hover {
     left: -100%;
     background-color: rgb(61, 61, 61);
     width: 50%;
-    height: 100vh;
+    height: calc(100vh - 60px); 
     display: flex;
     flex-direction: column;
     justify-content: center;
+    justify-content: flex-start;
     align-items: center;
+    padding-top: 20px;
     transition: all 0.3s;
   }
 
